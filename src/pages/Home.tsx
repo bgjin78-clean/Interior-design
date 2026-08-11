@@ -22,7 +22,7 @@ export function HomePage() {
       <section className="hero">
         <div className="hero-media">
           <img
-            src="/images/remodeling.png"
+            src="/images/hero.png"
             alt="가족애 인테리어 부산·경남 리모델링 현장"
           />
           <div className="hero-shade" />

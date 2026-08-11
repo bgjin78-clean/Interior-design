@@ -3,6 +3,8 @@ export type ServiceItem = {
   title: string
   summary: string
   points: string[]
+  image?: string
+  imageAlt?: string
 }
 
 export const demolitionServices: ServiceItem[] = [
@@ -78,6 +80,8 @@ export const interiorServices: ServiceItem[] = [
       '샤워부스·수전·거울장 설치',
       '누수 보수 및 환기 개선',
     ],
+    image: '/images/interior/bathroom.jpg',
+    imageAlt: '욕실 리모델링 시공 완성 사례',
   },
   {
     id: 'kitchen',
@@ -88,6 +92,8 @@ export const interiorServices: ServiceItem[] = [
       '상판 교체·연마·코팅',
       '후드·조명·콘센트 배치 조율',
     ],
+    image: '/images/interior/kitchen.jpg',
+    imageAlt: '주방 인테리어 시공 완성 사례',
   },
   {
     id: 'wallpaper-floor',
@@ -98,6 +104,8 @@ export const interiorServices: ServiceItem[] = [
       '장판·강화마루·강마루',
       '곰팡이·들뜸 보수 후 마감',
     ],
+    image: '/images/interior/wallpaper-floor.jpg',
+    imageAlt: '도배·장판 시공 완성 사례',
   },
   {
     id: 'molding',
@@ -108,6 +116,8 @@ export const interiorServices: ServiceItem[] = [
       '걸레받이·문선 교체',
       '도장·코킹으로 깔끔한 마감',
     ],
+    image: '/images/interior/molding.jpg',
+    imageAlt: '몰딩·걸레받이 시공 완성 사례',
   },
   {
     id: 'tile-paint',
@@ -118,6 +128,8 @@ export const interiorServices: ServiceItem[] = [
       '내부 페인트·방수페인트',
       '크랙·오염 면 보수 후 도장',
     ],
+    image: '/images/interior/tile-paint.jpg',
+    imageAlt: '타일·페인트 시공 완성 사례',
   },
   {
     id: 'door',
@@ -128,6 +140,8 @@ export const interiorServices: ServiceItem[] = [
       '붙박이장·신발장·수납장',
       '단열·방음 보강 시공',
     ],
+    image: '/images/interior/door.jpg',
+    imageAlt: '문·중문·목공 시공 완성 사례',
   },
   {
     id: 'lighting',
@@ -138,6 +152,8 @@ export const interiorServices: ServiceItem[] = [
       '스위치·콘센트 위치 조정',
       '안전 점검 후 마감',
     ],
+    image: '/images/interior/lighting.jpg',
+    imageAlt: '조명·전기 마감 시공 완성 사례',
   },
   {
     id: 'partial-repair',
@@ -148,6 +164,8 @@ export const interiorServices: ServiceItem[] = [
       '타일 깨짐·장판 들뜸 수리',
       '소규모 리모델링 패키지',
     ],
+    image: '/images/interior/partial-repair.jpg',
+    imageAlt: '부분수리·집수리 시공 완성 사례',
   },
 ]
 

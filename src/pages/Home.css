@@ -48,9 +48,10 @@
 }
 
 .hero-content h1 {
-  font-size: clamp(1.35rem, 2.6vw, 1.9rem);
+  font-size: clamp(1.2rem, 2.4vw, 1.9rem);
   font-weight: 500;
-  max-width: 18ch;
+  max-width: none;
+  white-space: nowrap;
   margin-bottom: 1rem;
   color: rgba(244, 247, 244, 0.95);
 }
@@ -325,5 +326,10 @@
     margin-left: 1rem;
     margin-right: 1rem;
     width: auto;
+  }
+
+  .hero-content h1 {
+    white-space: nowrap;
+    font-size: clamp(0.95rem, 4.2vw, 1.35rem);
   }
 }
