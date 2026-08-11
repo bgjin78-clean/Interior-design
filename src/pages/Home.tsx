@@ -34,6 +34,7 @@ export function HomePage() {
           </h1>
           <p className="hero-lead">
             부분철거·인테리어철거부터 욕실·주방·도배장판·몰딩까지.
+            <br />
             {SITE.regionsLabel} 현장에서 꼼꼼한 마감으로 보답합니다.
           </p>
           <div className="hero-actions">
