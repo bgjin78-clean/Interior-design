@@ -8,7 +8,7 @@ export type FeaturedService = {
   keywords: string[]
 }
 
-/** 검색 노출용 핵심 서비스 5개조 */
+/** 검색 노출용 핵심 서비스 5개분야 */
 export const featuredSchemas: FeaturedService[] = [
   {
     id: 'demolition',

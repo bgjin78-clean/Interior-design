@@ -64,10 +64,19 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem;
-  color: var(--accent);
+  align-items: center;
   font-size: 0.84rem;
   font-weight: 600;
   margin-bottom: 0.55rem;
+  color: var(--muted);
+}
+
+.review-meta .review-category {
+  color: var(--brand);
+  background: rgba(11, 42, 74, 0.08);
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  white-space: nowrap;
 }
 
 .review-item h2 {
@@ -89,10 +98,11 @@
 
 .before-after strong {
   display: block;
-  font-size: 0.8rem;
-  letter-spacing: 0.06em;
+  font-size: 0.92rem;
+  letter-spacing: 0;
   color: var(--brand);
   margin-bottom: 0.35rem;
+  font-family: var(--font-display);
 }
 
 .before-after p {

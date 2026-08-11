@@ -85,7 +85,7 @@ export function JsonLd() {
         knowsAbout: featuredSchemas.flatMap((s) => s.keywords),
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
-          name: '가족애 주요 서비스 5개조',
+          name: '가족애 주요 서비스 5개분야',
           itemListElement: featuredSchemas.map((service, index) => ({
             '@type': 'OfferCatalog',
             name: service.name,
@@ -128,7 +128,7 @@ export function JsonLd() {
         about: { '@id': businessId },
         primaryImageOfPage: {
           '@type': 'ImageObject',
-          url: `${SITE.url}/images/remodeling.png`,
+          url: `${SITE.url}/images/interior/partial-repair.jpg`,
         },
         inLanguage: 'ko-KR',
       },
@@ -147,7 +147,7 @@ export function JsonLd() {
       {
         '@type': 'ItemList',
         '@id': `${SITE.url}/#service-list`,
-        name: '가족애 핵심 서비스 5개조',
+        name: '가족애 핵심 서비스 5개분야',
         itemListOrder: 'https://schema.org/ItemListOrderAscending',
         numberOfItems: featuredSchemas.length,
         itemListElement: featuredSchemas.map((service, index) => ({

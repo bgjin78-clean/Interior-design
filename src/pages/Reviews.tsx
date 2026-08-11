@@ -103,7 +103,7 @@ export function ReviewsPage() {
                 <div className="review-top">
                   <div>
                     <div className="review-meta">
-                      <span>{review.category}</span>
+                      <span className="review-category">{review.category}</span>
                       <time dateTime={review.date}>{review.date}</time>
                       <span>{review.area}</span>
                     </div>
@@ -122,11 +122,11 @@ export function ReviewsPage() {
                 <p className="review-summary">{review.summary}</p>
                 <div className="before-after">
                   <div>
-                    <strong>Before</strong>
+<strong>전</strong>
                     <p>{review.beforeNote}</p>
                   </div>
                   <div>
-                    <strong>After</strong>
+                    <strong>후</strong>
                     <p>{review.afterNote}</p>
                   </div>
                 </div>
@@ -221,7 +221,7 @@ export function ReviewsPage() {
                 />
               </label>
               <label>
-                시공 전
+                전
                 <textarea
                   rows={2}
                   value={form.beforeNote}
@@ -229,7 +229,7 @@ export function ReviewsPage() {
                 />
               </label>
               <label>
-                시공 후
+                후
                 <textarea
                   rows={2}
                   value={form.afterNote}

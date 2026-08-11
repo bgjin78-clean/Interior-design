@@ -53,12 +53,12 @@ export function Seo({
     upsertMeta('property', 'og:title', fullTitle)
     upsertMeta('property', 'og:description', description)
     upsertMeta('property', 'og:url', url)
-    upsertMeta('property', 'og:image', `${SITE.url}/images/remodeling.png`)
+    upsertMeta('property', 'og:image', `${SITE.url}/images/interior/partial-repair.jpg`)
 
     upsertMeta('name', 'twitter:card', 'summary_large_image')
     upsertMeta('name', 'twitter:title', fullTitle)
     upsertMeta('name', 'twitter:description', description)
-    upsertMeta('name', 'twitter:image', `${SITE.url}/images/remodeling.png`)
+    upsertMeta('name', 'twitter:image', `${SITE.url}/images/interior/partial-repair.jpg`)
 
     upsertLink('canonical', url)
   }, [title, description, path, type])

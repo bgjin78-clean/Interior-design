@@ -23,15 +23,17 @@ export function HomePage() {
         <div className="hero-media">
           <img
             src="/images/hero.png"
-            alt="가족애 인테리어 부산·경남 리모델링 현장"
+            alt="부산·경남 철거·인테리어 현장 — 가족애"
           />
           <div className="hero-shade" />
         </div>
         <div className="container hero-content">
           <p className="hero-brand">가족애</p>
-          <h1>부산·경남 철거부터 인테리어까지</h1>
+          <h1>
+            부산·경남 <em>철거부터</em> 인테리어까지
+          </h1>
           <p className="hero-lead">
-            부분철거·인테리어철거와 욕실·주방·도배장판·몰딩까지.
+            부분철거·인테리어철거부터 욕실·주방·도배장판·몰딩까지.
             {SITE.regionsLabel} 현장에서 꼼꼼한 마감으로 보답합니다.
           </p>
           <div className="hero-actions">
@@ -76,8 +78,8 @@ export function HomePage() {
       <section className="section">
         <div className="container">
           <div className="section-head reveal" ref={featuredRef}>
-            <span className="eyebrow">CORE 5</span>
-            <h2>핵심 서비스 5개조</h2>
+            <span className="eyebrow">SERVICE</span>
+            <h2>핵심 서비스 5개분야</h2>
             <p>
               철거 · 리모델링 · 욕실 · 주방 · 도배장판 — 검색과 상담에 가장 많이 찾는
               분야입니다.

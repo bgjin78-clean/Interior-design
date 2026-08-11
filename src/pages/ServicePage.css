@@ -24,11 +24,11 @@
 }
 
 .demolition-hero::before {
-  background-image: url('/images/demolish.png');
+  background-image: url('/images/hero.png');
 }
 
 .interior-hero::before {
-  background-image: url('/images/kitchen.png');
+  background-image: url('/images/interior/kitchen.jpg');
 }
 
 .service-hero .eyebrow {

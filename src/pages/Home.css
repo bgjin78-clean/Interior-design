@@ -31,7 +31,7 @@
   position: relative;
   z-index: 1;
   padding: 5rem 0 4.5rem;
-  max-width: 44rem;
+  max-width: min(52rem, calc(100% - 2rem));
   margin-left: max(1rem, calc((100% - var(--max)) / 2));
   animation: rise 0.9s ease both;
 }
@@ -48,12 +48,19 @@
 }
 
 .hero-content h1 {
-  font-size: clamp(1.2rem, 2.4vw, 1.9rem);
+  font-size: clamp(1.15rem, 2.5vw, 1.85rem);
   font-weight: 500;
   max-width: none;
-  white-space: nowrap;
+  white-space: normal;
   margin-bottom: 1rem;
   color: rgba(244, 247, 244, 0.95);
+  line-height: 1.45;
+}
+
+.hero-content h1 em {
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
 }
 
 .hero-lead {
@@ -141,11 +148,11 @@
 }
 
 .dual-panel.demolition::before {
-  background-image: url('/images/demolish.png');
+  background-image: url('/images/hero.png');
 }
 
 .dual-panel.interior::before {
-  background-image: url('/images/bathroom.png');
+  background-image: url('/images/interior/kitchen.jpg');
 }
 
 .featured-grid {
@@ -329,7 +336,6 @@
   }
 
   .hero-content h1 {
-    white-space: nowrap;
-    font-size: clamp(0.95rem, 4.2vw, 1.35rem);
+    font-size: clamp(1.1rem, 4.5vw, 1.4rem);
   }
 }
