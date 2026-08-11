@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gajokae.example.com/sitemap.xml

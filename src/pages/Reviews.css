@@ -1,0 +1,207 @@
+.reviews-hero {
+  padding: 4rem 0 2.5rem;
+}
+
+.reviews-hero .eyebrow {
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-bottom: 0.7rem;
+}
+
+.reviews-hero h1 {
+  font-size: clamp(2.3rem, 5vw, 3.6rem);
+  margin-bottom: 0.85rem;
+}
+
+.reviews-hero p {
+  max-width: 40rem;
+  color: var(--ink-soft);
+  margin-bottom: 1.4rem;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 2rem;
+}
+
+.filter-row button {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.45);
+  color: var(--ink-soft);
+  border-radius: 999px;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.9rem;
+}
+
+.filter-row button.is-active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #f4f7f4;
+}
+
+.reviews-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.review-item {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.review-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
+}
+
+.review-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  color: var(--accent);
+  font-size: 0.84rem;
+  font-weight: 600;
+  margin-bottom: 0.55rem;
+}
+
+.review-item h2 {
+  font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+  margin-bottom: 0.6rem;
+}
+
+.review-summary {
+  color: var(--ink-soft);
+  margin-bottom: 1rem;
+}
+
+.before-after {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.before-after strong {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  color: var(--brand);
+  margin-bottom: 0.35rem;
+}
+
+.before-after p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag-row span {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  background: rgba(22, 53, 47, 0.06);
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+}
+
+.empty {
+  color: var(--muted);
+  padding: 2rem 0;
+}
+
+.btn-text {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  padding: 0.2rem 0.4rem;
+}
+
+.btn-text:hover {
+  color: var(--brand);
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  background: rgba(12, 22, 18, 0.45);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  animation: fadeIn 0.2s ease;
+}
+
+.modal {
+  width: min(560px, 100%);
+  max-height: min(90vh, 840px);
+  overflow: auto;
+  background: var(--surface-strong);
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  padding: 1.25rem;
+}
+
+.modal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.modal-head h2 {
+  font-size: 1.35rem;
+}
+
+.review-form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.review-form label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.review-form input,
+.review-form textarea,
+.review-form select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.7rem 0.8rem;
+  background: #fff;
+  color: var(--ink);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.form-hint {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+@media (max-width: 720px) {
+  .before-after,
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

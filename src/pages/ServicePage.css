@@ -1,0 +1,92 @@
+.service-hero {
+  position: relative;
+  padding: 4.5rem 0 3.5rem;
+  color: #f4f7f4;
+  overflow: hidden;
+}
+
+.service-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  animation: slowZoom 16s ease-out forwards;
+  z-index: -2;
+}
+
+.service-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(12, 24, 20, 0.82), rgba(12, 24, 20, 0.45));
+  z-index: -1;
+}
+
+.demolition-hero::before {
+  background-image: url('/images/demolish.png');
+}
+
+.interior-hero::before {
+  background-image: url('/images/kitchen.png');
+}
+
+.service-hero .eyebrow {
+  color: var(--accent-soft);
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.service-hero h1 {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+.service-hero p {
+  max-width: 38rem;
+  color: rgba(244, 247, 244, 0.86);
+  font-size: 1.05rem;
+}
+
+.note-panel {
+  padding: 2rem 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.note-panel h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 1.2rem;
+}
+
+.note-panel ul {
+  margin: 0 0 1.75rem;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.note-panel li {
+  position: relative;
+  padding-left: 1.1rem;
+  color: var(--ink-soft);
+}
+
+.note-panel li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--brand);
+}
+
+.note-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}

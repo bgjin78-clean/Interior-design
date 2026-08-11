@@ -1,0 +1,88 @@
+.faq-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.faq-item {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.55);
+  overflow: hidden;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.faq-item.is-open {
+  border-color: rgba(22, 53, 47, 0.28);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.faq-trigger {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.85rem;
+  align-items: center;
+  padding: 1rem 1.1rem;
+  border: 0;
+  background: transparent;
+  text-align: left;
+}
+
+.faq-cat {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--brand);
+  background: rgba(22, 53, 47, 0.08);
+  padding: 0.3rem 0.55rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.faq-q {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.faq-icon {
+  width: 1.5rem;
+  text-align: center;
+  color: var(--accent);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.faq-panel {
+  padding: 0 1.1rem 1.1rem 1.1rem;
+}
+
+.faq-panel p {
+  color: var(--ink-soft);
+  padding-left: calc(0.55rem + 3.2rem);
+}
+
+@media (max-width: 640px) {
+  .faq-trigger {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      'cat icon'
+      'q q';
+  }
+
+  .faq-cat {
+    grid-area: cat;
+    justify-self: start;
+  }
+
+  .faq-q {
+    grid-area: q;
+  }
+
+  .faq-icon {
+    grid-area: icon;
+  }
+
+  .faq-panel p {
+    padding-left: 0;
+  }
+}
