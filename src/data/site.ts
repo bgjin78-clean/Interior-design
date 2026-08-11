@@ -4,6 +4,8 @@ export const SITE = {
   phoneDisplay: '010-9242-3895',
   phoneTel: '01092423895',
   phoneHref: 'tel:01092423895',
+  /** 문의 메일 수신 (EmailJS Gmail) */
+  email: 'bg.jin78@gmail.com',
   regions: ['부산', '경남'],
   regionsLabel: '부산 · 경남',
   regionsLong: '부산광역시, 경상남도 전 지역',

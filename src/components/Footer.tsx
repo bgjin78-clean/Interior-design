@@ -26,6 +26,11 @@ export function Footer() {
           <a className="footer-phone" href={SITE.phoneHref}>
             {SITE.phoneDisplay}
           </a>
+          {SITE.email ? (
+            <a className="footer-mail" href={`mailto:${SITE.email}`}>
+              {SITE.email}
+            </a>
+          ) : null}
           <p className="footer-meta">
             상담 {SITE.hours} · {SITE.regionsLabel} · 현장 일정 협의 가능
           </p>

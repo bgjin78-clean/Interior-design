@@ -38,7 +38,18 @@
   font-family: var(--font-display);
   font-size: clamp(1.8rem, 4vw, 2.4rem);
   font-weight: 700;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.35rem;
+}
+
+.contact-info .mail {
+  display: inline-block;
+  color: var(--ink-soft);
+  margin-bottom: 0.75rem;
+  word-break: break-all;
+}
+
+.contact-info .mail:hover {
+  color: var(--brand);
 }
 
 .contact-info p {
@@ -101,6 +112,11 @@
 
 .sent-msg {
   color: var(--brand);
+  font-size: 0.9rem;
+}
+
+.error-msg {
+  color: #9b2c2c;
   font-size: 0.9rem;
 }
 
