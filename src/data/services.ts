@@ -105,7 +105,7 @@ export const interiorServices: ServiceItem[] = [
       '곰팡이·들뜸 보수 후 마감',
     ],
     image: '/images/interior/wallpaper-floor.jpg',
-    imageAlt: '도배·장판 시공 완성 사례',
+    imageAlt: '도배·장판 시공 — 벽지와 마루 마감 완성',
   },
   {
     id: 'molding',
@@ -117,7 +117,7 @@ export const interiorServices: ServiceItem[] = [
       '도장·코킹으로 깔끔한 마감',
     ],
     image: '/images/interior/molding.jpg',
-    imageAlt: '몰딩·걸레받이 시공 완성 사례',
+    imageAlt: '몰딩·걸레받이 시공 — 천장몰딩과 걸레받이 마감',
   },
   {
     id: 'tile-paint',
@@ -129,7 +129,7 @@ export const interiorServices: ServiceItem[] = [
       '크랙·오염 면 보수 후 도장',
     ],
     image: '/images/interior/tile-paint.jpg',
-    imageAlt: '타일·페인트 시공 완성 사례',
+    imageAlt: '타일·페인트 시공 — 벽 페인트와 타일 마감',
   },
   {
     id: 'door',
@@ -141,7 +141,7 @@ export const interiorServices: ServiceItem[] = [
       '단열·방음 보강 시공',
     ],
     image: '/images/interior/door.jpg',
-    imageAlt: '문·중문·목공 시공 완성 사례',
+    imageAlt: '문·중문·목공 시공 — 방문과 붙박이 수납',
   },
   {
     id: 'lighting',
@@ -153,7 +153,7 @@ export const interiorServices: ServiceItem[] = [
       '안전 점검 후 마감',
     ],
     image: '/images/interior/lighting.jpg',
-    imageAlt: '조명·전기 마감 시공 완성 사례',
+    imageAlt: '조명·전기 마감 — 매입등과 펜던트 조명',
   },
   {
     id: 'partial-repair',
@@ -165,7 +165,7 @@ export const interiorServices: ServiceItem[] = [
       '소규모 리모델링 패키지',
     ],
     image: '/images/interior/partial-repair.jpg',
-    imageAlt: '부분수리·집수리 시공 완성 사례',
+    imageAlt: '부분수리·집수리 — 타일·하자 보수 현장',
   },
 ]
 
